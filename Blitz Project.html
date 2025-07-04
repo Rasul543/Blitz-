@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jual Panel via WhatsApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: #007BFF;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .product {
+      text-align: center;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+    }
+
+    .product h2 {
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #28a745;
+      margin: 10px 0 20px;
+    }
+
+    button {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      background: #218838;
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    button:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 12px;
+      background-color: #ddd;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jual Panel</h1>
+  </header>
+  <main>
+    <section class="product">
+      <h2>Panel Bot wa</h2>
+      <p>Panel bot berkualitas tinggi untuk kebutuhan wa Anda.</p>
+      <div class="price">5.000</div>
+      <div class="price">3.000</div>
+      <div class="price">7.000</div>
+      <div class="price">9.000</div>
+      <button id="buyButton">Beli Sekarang</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Jual Panel by Blitz Semua hak dilindungi.</p>
+  </footer>
+
+  <script>
+    document.getElementById('buyButton').addEventListener('click', function () {
+      const message = "Halo, saya tertarik untuk membeli panel seharga Rp5.000";
+      const phoneNumber = "6285174293745"; // Ganti dengan nomor WhatsApp Anda
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    });
+  </script>
+</body>
+</html>
